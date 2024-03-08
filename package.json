@@ -11,9 +11,15 @@
   "dependencies": {
     "gray-matter": "^4.0.2",
     "next": "^12.2.5",
+    "ntl": "^5.1.0",
     "raw-loader": "^4.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-markdown": "^8.0.3"
-  }
+  },
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/8979c7b5-18bf-4837-9861-2d9a5844b19b/deploy-status)](https://app.netlify.com/sites/next-netlify-blog-starter/deploys)",
+  "main": "next.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

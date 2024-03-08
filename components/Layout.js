@@ -2,16 +2,18 @@ import Head from 'next/head'
 
 import Header from './Header'
 
-export default function Layout({ children, pageTitle, description, ...props }) {
-  return (
-    <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="utf-8" />
-        <meta name="Description" content={description}></meta>
-        <title>{pageTitle}</title>
-      </Head>
-      <style jsx global>{`
+export default function Layout({children, pageTitle, description, ...props}) {
+    return (
+        <>
+            <Head>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <meta charSet="utf-8"/>
+                <meta name="Description" content={description}></meta>
+                <link rel="webmention"
+                      href="https://webmention.io/main--next-netlify-webmentions.netlify.app/webmention"/>
+                <title>{pageTitle}</title>
+            </Head>
+            <style jsx global>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800;900&display=swap');
 
         html,
@@ -60,13 +62,13 @@ export default function Layout({ children, pageTitle, description, ...props }) {
           height: 1rem;
         }
       `}</style>
-      <section className="layout">
-        <Header />
-        <div className="content">{children}</div>
-      </section>
-      <footer>
-        Built with <img src="/netliheart.svg" alt="Netlify Heart" /> for you
-      </footer>
-    </>
-  )
+            <section className="layout">
+                <Header/>
+                <div className="content">{children}</div>
+            </section>
+            <footer>
+                Built with <img src="/netliheart.svg" alt="Netlify Heart"/> for you
+            </footer>
+        </>
+    )
 }

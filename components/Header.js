@@ -12,6 +12,7 @@ export default function Header() {
             <a>About</a>
           </Link>
             <a href="https://twitter.com/mulders62829" rel="me" >Twitter</a>
+            <a href="https://github.com/ianvanmulders" rel="me" >GitHub</a>
         </nav>
       </header>
       <style jsx>{`
